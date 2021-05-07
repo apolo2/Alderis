@@ -367,7 +367,8 @@ open class ColorPickerViewController: UIViewController {
 			if isKeyboardVisible {
 				view.endEditing(true)
 			} else {
-				innerViewController.saveTapped()
+				//innerViewController.saveTapped()
+				innerViewController.cancelTapped()
 				dismiss(animated: true, completion: nil)
 			}
 		}

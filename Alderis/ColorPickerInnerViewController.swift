@@ -322,7 +322,7 @@ internal class ColorPickerInnerViewController: UIViewController {
 		}
 	}
 
-	@objc private func cancelTapped() {
+	@objc func cancelTapped() {
 		if !compatibilityMode {
 			delegate?.colorPicker?(colorPicker, didSelect: configuration.color)
 		}
